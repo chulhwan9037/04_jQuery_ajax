@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script type="text/javascript">
+	$(function() {
+		const arr1 = [{
+			"addr":"서울",
+			"name":"무대리"},{
+			"addr":"부산",
+			"name":"홍과장"},{		
+			"addr":"대전",
+			"name":"박사장"}];
+	
+		const res1 = $.map(arr1, function(obj, b) {
+			if(obj.addr === '대전')
+				return obj.name;
+		});
+		console.log(res1);
+	});
+</script>
+</head>
+<body>
+
+</body>
+</html>

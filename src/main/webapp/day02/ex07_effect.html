@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>effects</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script type="text/javascript">
+	$(function() {
+		// slideUp(), slideDown()
+		// 지연시간 지정 : 'fast' and 'slow' 또는 200 ~ 600 
+		$("#btn1").click(function() {
+			$("#img").slideUp("swing");
+		});
+
+		$("#btn2").click(function() {
+			$("#img").slideDown();
+		});
+
+		$("#btn3").click(function() {
+			$("#img").slideToggle();
+		});
+	});
+</script>
+</head>
+<body>
+	<button id="btn1">감추기</button>
+	<button id="btn2">보이기</button>
+	<button id="btn3">감추기/보이기</button>
+	<hr>
+	<img alt="사진" src="../images/img01.jpg" id="img" width="600px">
+	<hr>
+	<p>안녕하세요</p>
+	
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

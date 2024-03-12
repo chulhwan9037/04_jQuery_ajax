@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<style type="text/css">
+	img{
+		position: absolute;
+	}
+</style>
+<script type="text/javascript">
+	$(function() {
+		$("#move").click(function() {
+			$("img").animate({
+				left: "+=800",
+				top: "+=800"
+			},8000);
+		});
+		$("img").click(function() {
+			// 애니매이션 종료
+			$("img").stop();
+		})
+	});
+</script>
+</head>
+<body>
+	<button id="move">이동</button>
+	<div>
+		<img alt="none" src="../images/img03.jpg">
+	</div>
+</body>
+</html>

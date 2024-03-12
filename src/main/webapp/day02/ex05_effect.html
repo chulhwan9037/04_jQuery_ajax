@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>effects</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script type="text/javascript">
+	$(function() {
+		// hide(), show()
+		// 지연시간 지정 : 'fast' and 'slow' 또는 200 ~ 600 
+		$("#btn1").click(function() {
+			/* $("#img").hide(400 or 기본값);
+			$("#img").hide(200 or fast);
+			$("#img").hide(600 or slow); */
+			$("#img").hide(600);
+		});
+
+		$("#btn2").click(function() {
+			/* $("#img").show(400 or 기본값);
+			$("#img").show(200 or fast);
+			$("#img").show(600 or slow); */
+			$("#img").show(600);
+		});
+
+		$("#btn3").click(function() {
+			/* $("#img").toggle(400 or 기본값);
+			$("#img").toggle(200 or fast);
+			$("#img").toggle(600 or slow); */
+			$("#img").toggle(600);
+		});
+	});
+</script>
+</head>
+<body>
+	<button id="btn1">감추기</button>
+	<button id="btn2">보이기</button>
+	<button id="btn3">감추기/보이기</button>
+	<hr>
+	<img alt="사진" src="../images/img01.jpg" id="img">
+	<hr>
+	<p>안녕하세요</p>
+	
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
